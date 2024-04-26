@@ -23,7 +23,7 @@ De plus, ce projet nécessite l'utilisation d'une base de données MySQL. Vous d
 Une fois que vous avez installé votre serveur MySQL, vous pouvez remplacer les identifiants utilisés dans le code par les votre. Dans le fichier `blog/index.php`, à la ligne 17 :
 
 ```php
-$bdd = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'blog', 'password');
+$bdd = new PDO('mysql:host=localhost;dbname=blog;charset=utf8;port=3307', 'root', '');
 ```
 
 Vous devriez aussi remplir votre base de données. Vous pouvez charger le schéma par défaut (et quelques données), contenu dans le fichier `db.sql`. Pour ce faire, vous pouvez utiliser votre interface d'administration MySQL, ou bien lancer la commande suivante, si vous êtes sous Linux :
